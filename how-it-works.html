@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works - SignSpeak</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+      <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+              <i class="fas fa-hands me-2 text-primary"></i>SignSpeak
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="converter.html">Live Converter</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="learn.html">Learn</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="how-it-works.html">How It Works</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">
+                          <i class="fas fa-moon"></i>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-5 mt-4">
+      <div class="container">
+          <!-- Header -->
+          <div class="row mb-5">
+              <div class="col-12 text-center">
+                  <h1 class="display-4 fw-bold mb-3">How It Works</h1>
+                  <p class="lead text-muted">Understanding the AI-powered sign language recognition process</p>
+              </div>
+          </div>
+
+          <!-- Process Flow -->
+          <div class="row mb-5">
+              <div class="col-12">
+                  <div class="process-flow">
+                      <div class="process-step active" data-step="1">
+                          <div class="step-circle">1</div>
+                          <div class="step-content">
+                              <h4>Video Capture</h4>
+                              <p>Camera captures real-time video feed</p>
+                          </div>
+                      </div>
+                      <div class="process-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                      </div>
+                      <div class="process-step" data-step="2">
+                          <div class="step-circle">2</div>
+                          <div class="step-content">
+                              <h4>Hand Detection</h4>
+                              <p>AI identifies and tracks hand movements</p>
+                          </div>
+                      </div>
+                      <div class="process-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                      </div>
+                      <div class="process-step" data-step="3">
+                          <div class="step-circle">3</div>
+                          <div class="step-content">
+                              <h4>Feature Extraction</h4>
+                              <p>Key landmarks and features are identified</p>
+                          </div>
+                      </div>
+                      <div class="process-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                      </div>
+                      <div class="process-step" data-step="4">
+                          <div class="step-circle">4</div>
+                          <div class="step-content">
+                              <h4>Classification</h4>
+                              <p>Neural network classifies the gesture</p>
+                          </div>
+                      </div>
+                      <div class="process-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                      </div>
+                      <div class="process-step" data-step="5">
+                          <div class="step-circle">5</div>
+                          <div class="step-content">
+                              <h4>Text Output</h4>
+                              <p>Recognized letter is displayed as text</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Flowchart Diagram -->
+          <div class="row mb-5">
+              <div class="col-12">
+                  <div class="card glass-card">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-project-diagram me-2 text-primary"></i>Real-time Conversion Flowchart
+                          </h4>
+                      </div>
+                      <div class="card-body text-center">
+                          <p class="text-muted">This diagram illustrates the step-by-step process of real-time sign language to text conversion.</p>
+                          <img src="/images/flowchart.png" alt="Flowchart diagram showing the real-time sign language to text conversion process" class="img-fluid rounded-3" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Sequence Diagram -->
+          <div class="row mb-5">
+              <div class="col-12">
+                  <div class="card glass-card">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-exchange-alt me-2 text-primary"></i>Data Flow Sequence
+                          </h4>
+                      </div>
+                      <div class="card-body text-center">
+                          <p class="text-muted">This sequence diagram details the interaction and data flow between the user interface and core modules like Mediapipe, Gesture Classifier, and Text-to-Speech Engine.</p>
+                          <img src="/images/sequence-diagram.png" alt="Sequence diagram showing the flow of data between the user interface and modules" class="img-fluid rounded-3" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Detailed Sections -->
+          <div class="row g-4 mb-5">
+              <div class="col-lg-6">
+                  <div class="card glass-card h-100">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-camera me-2 text-primary"></i>Computer Vision
+                          </h4>
+                      </div>
+                      <div class="card-body">
+                          <p>Our system uses advanced computer vision algorithms to:</p>
+                          <ul>
+                              <li>Detect hands in real-time video streams</li>
+                              <li>Track 21 key hand landmarks</li>
+                              <li>Normalize hand positions and orientations</li>
+                              <li>Filter out background noise and distractions</li>
+                          </ul>
+                          <div class="tech-demo mt-3">
+                              <div class="hand-landmarks">
+                                  <i class="fas fa-hand-paper fa-3x text-primary"></i>
+                                  <div class="landmarks-overlay">
+                                      <div class="landmark" style="top: 20%; left: 30%;"></div>
+                                      <div class="landmark" style="top: 40%; left: 25%;"></div>
+                                      <div class="landmark" style="top: 60%; left: 35%;"></div>
+                                      <div class="landmark" style="top: 30%; left: 50%;"></div>
+                                      <div class="landmark" style="top: 50%; left: 45%;"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="card glass-card h-100">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-brain me-2 text-primary"></i>Machine Learning
+                          </h4>
+                      </div>
+                      <div class="card-body">
+                          <p>Our neural network model features:</p>
+                          <ul>
+                              <li>Deep learning architecture with multiple layers</li>
+                              <li>Trained on thousands of sign language samples</li>
+                              <li>Real-time inference with 95% accuracy</li>
+                              <li>Continuous learning and improvement</li>
+                          </ul>
+                          <div class="neural-network mt-3">
+                              <div class="network-layer">
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                              </div>
+                              <div class="network-layer">
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                              </div>
+                              <div class="network-layer">
+                                  <div class="neuron"></div>
+                                  <div class="neuron"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Interactive Demo -->
+          <div class="row mb-5">
+              <div class="col-12">
+                  <div class="card glass-card">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-play-circle me-2 text-primary"></i>Interactive Pipeline Demo
+                          </h4>
+                      </div>
+                      <div class="card-body">
+                          <div class="pipeline-demo">
+                              <div class="demo-stage active" id="stage1">
+                                  <div class="stage-visual">
+                                      <i class="fas fa-video fa-4x text-primary"></i>
+                                  </div>
+                                  <h5>Video Input</h5>
+                                  <p>Raw video feed from webcam</p>
+                              </div>
+                              <div class="demo-stage" id="stage2">
+                                  <div class="stage-visual">
+                                      <i class="fas fa-hand-paper fa-4x text-warning"></i>
+                                  </div>
+                                  <h5>Hand Detection</h5>
+                                  <p>AI locates hand in frame</p>
+                              </div>
+                              <div class="demo-stage" id="stage3">
+                                  <div class="stage-visual">
+                                      <i class="fas fa-project-diagram fa-4x text-info"></i>
+                                  </div>
+                                  <h5>Feature Analysis</h5>
+                                  <p>Extract key hand features</p>
+                              </div>
+                              <div class="demo-stage" id="stage4">
+                                  <div class="stage-visual">
+                                      <i class="fas fa-cog fa-4x text-success"></i>
+                                  </div>
+                                  <h5>Processing</h5>
+                                  <p>Neural network classification</p>
+                              </div>
+                              <div class="demo-stage" id="stage5">
+                                  <div class="stage-visual">
+                                      <div class="result-letter">A</div>
+                                  </div>
+                                  <h5>Result</h5>
+                                  <p>Recognized letter output</p>
+                              </div>
+                          </div>
+                          <div class="text-center mt-4">
+                              <button class="btn btn-primary" id="runDemo">
+                                  <i class="fas fa-play me-2"></i>Run Demo
+                              </button>
+                              <button class="btn btn-outline-secondary ms-2" id="resetDemo">
+                                  <i class="fas fa-redo me-2"></i>Reset
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Technical Specifications -->
+          <div class="row mb-5">
+              <div class="col-md-6">
+                  <div class="card glass-card">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-chart-line me-2 text-primary"></i>Performance Metrics
+                          </h4>
+                      </div>
+                      <div class="card-body">
+                          <div class="metric-item">
+                              <div class="metric-label">Accuracy Rate</div>
+                              <div class="metric-value">95.2%</div>
+                              <div class="metric-bar">
+                                  <div class="metric-fill" style="width: 95.2%"></div>
+                              </div>
+                          </div>
+                          <div class="metric-item">
+                              <div class="metric-label">Processing Speed</div>
+                              <div class="metric-value">30 FPS</div>
+                              <div class="metric-bar">
+                                  <div class="metric-fill" style="width: 100%"></div>
+                              </div>
+                          </div>
+                          <div class="metric-item">
+                              <div class="metric-label">Latency</div>
+                              <div class="metric-value">< 50ms</div>
+                              <div class="metric-bar">
+                                  <div class="metric-fill" style="width: 90%"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="card glass-card">
+                      <div class="card-header">
+                          <h4 class="mb-0">
+                              <i class="fas fa-cogs me-2 text-primary"></i>System Requirements
+                          </h4>
+                      </div>
+                      <div class="card-body">
+                          <div class="requirement-item">
+                              <i class="fas fa-camera text-primary me-2"></i>
+                              <span>Webcam with 720p resolution or higher</span>
+                          </div>
+                          <div class="requirement-item">
+                              <i class="fas fa-lightbulb text-primary me-2"></i>
+                              <span>Good lighting conditions</span>
+                          </div>
+                          <div class="requirement-item">
+                              <i class="fas fa-desktop text-primary me-2"></i>
+                              <span>Modern web browser with WebRTC support</span>
+                          </div>
+                          <div class="requirement-item">
+                              <i class="fas fa-wifi text-primary me-2"></i>
+                              <span>Stable internet connection</span>
+                          </div>
+                          <div class="requirement-item">
+                              <i class="fas fa-microchip text-primary me-2"></i>
+                              <span>Minimum 4GB RAM recommended</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="how-it-works.js"></script>
+</body>
+</html>

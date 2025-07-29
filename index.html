@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignSpeak - AI Sign Language Recognition</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+      <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+              <i class="fas fa-hands me-2 text-primary"></i>SignSpeak
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="converter.html">Live Converter</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="learn.html">Learn</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="how-it-works.html">How It Works</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">
+                          <i class="fas fa-moon"></i>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container">
+          <div class="row align-items-center min-vh-100">
+              <div class="col-lg-6">
+                  <div class="hero-content">
+                      <h1 class="display-3 fw-bold mb-4 text-gradient">
+                          Bridge Communication with AI
+                      </h1>
+                      <p class="lead mb-4 text-light-emphasis">
+                          Real-time sign language recognition powered by advanced AI. 
+                          Convert gestures to text instantly and learn sign language interactively.
+                      </p>
+                      <div class="d-flex gap-3 mb-4">
+                          <a href="converter.html" class="btn btn-primary btn-lg px-4 py-3">
+                              <i class="fas fa-video me-2"></i>Start Converting
+                          </a>
+                          <a href="learn.html" class="btn btn-outline-light btn-lg px-4 py-3">
+                              <i class="fas fa-graduation-cap me-2"></i>Learn Signs
+                          </a>
+                      </div>
+                      <div class="hero-stats d-flex gap-4">
+                          <div class="stat-item">
+                              <div class="stat-number">26</div>
+                              <div class="stat-label">Letters Supported</div>
+                          </div>
+                          <div class="stat-item">
+                              <div class="stat-number">95%</div>
+                              <div class="stat-label">Accuracy Rate</div>
+                          </div>
+                          <div class="stat-item">
+                              <div class="stat-number">Real-time</div>
+                              <div class="stat-label">Processing</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="hero-visual">
+                      <div class="floating-card">
+                          <div class="card glass-card">
+                              <div class="card-body text-center">
+                                  <div class="hand-demo mb-3">
+                                      <i class="fas fa-hand-paper fa-4x text-primary"></i>
+                                  </div>
+                                  <h5 class="card-title">Live Recognition</h5>
+                                  <p class="card-text">AI detects and translates sign language in real-time</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+      </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5 bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center mb-5">
+                  <h2 class="display-5 fw-bold mb-3">Powerful Features</h2>
+                  <p class="lead text-muted">Everything you need for sign language recognition and learning</p>
+              </div>
+          </div>
+          <div class="row g-4">
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-camera"></i>
+                      </div>
+                      <h4>Real-time Recognition</h4>
+                      <p>Instant gesture detection and translation with high accuracy using advanced computer vision.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-book-open"></i>
+                      </div>
+                      <h4>Interactive Learning</h4>
+                      <p>Learn sign language with our comprehensive A-Z gesture guide and interactive tutorials.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-volume-up"></i>
+                      </div>
+                      <h4>Text-to-Speech</h4>
+                      <p>Convert recognized text to speech for better accessibility and communication.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-download"></i>
+                      </div>
+                      <h4>Export Transcripts</h4>
+                      <p>Save and download conversation transcripts for future reference and documentation.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-cog"></i>
+                      </div>
+                      <h4>Customizable Settings</h4>
+                      <p>Adjust confidence thresholds, language preferences, and other settings to your needs.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-card h-100">
+                      <div class="feature-icon">
+                          <i class="fas fa-mobile-alt"></i>
+                      </div>
+                      <h4>Responsive Design</h4>
+                      <p>Works seamlessly across all devices - desktop, tablet, and mobile for maximum accessibility.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Quick Start Section -->
+  <section class="py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center mb-5">
+                  <h2 class="display-5 fw-bold mb-3">Quick Start Guide</h2>
+                  <p class="lead text-muted">Get started in just 3 simple steps</p>
+              </div>
+          </div>
+          <div class="row g-4">
+              <div class="col-md-4">
+                  <div class="step-card text-center">
+                      <div class="step-number">1</div>
+                      <div class="step-icon">
+                          <i class="fas fa-video"></i>
+                      </div>
+                      <h4>Enable Camera</h4>
+                      <p>Allow camera access and position yourself in front of the webcam with good lighting.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="step-card text-center">
+                      <div class="step-number">2</div>
+                      <div class="step-icon">
+                          <i class="fas fa-hand-paper"></i>
+                      </div>
+                      <h4>Make Gestures</h4>
+                      <p>Perform sign language gestures clearly within the camera frame for best recognition.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="step-card text-center">
+                      <div class="step-number">3</div>
+                      <div class="step-icon">
+                          <i class="fas fa-comments"></i>
+                      </div>
+                      <h4>See Results</h4>
+                      <p>Watch as your gestures are instantly converted to text with confidence scores.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-5">
+              <a href="converter.html" class="btn btn-primary btn-lg">
+                  <i class="fas fa-play me-2"></i>Try It Now
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5 class="fw-bold mb-3">
+                      <i class="fas fa-hands me-2 text-primary"></i>SignSpeak
+                  </h5>
+                  <p class="text-muted">Bridging communication gaps with AI-powered sign language recognition technology.</p>
+              </div>
+              <div class="col-md-3">
+                  <h6 class="fw-bold mb-3">Quick Links</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="converter.html" class="text-muted text-decoration-none">Live Converter</a></li>
+                      <li><a href="learn.html" class="text-muted text-decoration-none">Learn Signs</a></li>
+                      <li><a href="how-it-works.html" class="text-muted text-decoration-none">How It Works</a></li>
+                      <li><a href="faq.html" class="text-muted text-decoration-none">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h6 class="fw-bold mb-3">Support</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                      <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                      <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                      <li><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+              <div class="col-md-6">
+                  <p class="text-muted mb-0">&copy; 2024 SignSpeak. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <div class="social-links">
+                      <a href="#" class="text-muted me-3"><i class="fab fa-github"></i></a>
+                      <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-muted"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
